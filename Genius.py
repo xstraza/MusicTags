@@ -96,4 +96,7 @@ def lyrics_to_songs(folder_path):
         print(folder_path, error_list)
 
 
-
+response = request_song_info('hey ya', '')
+js = response.json()
+js = dict(js)
+print(js)
